@@ -1,0 +1,2 @@
+sudo /usr/local/cuda-10.1/bin/nvprof --profile-child-processes -e all --csv --log-file "%p" ./profile
+sudo /usr/local/cuda-10.1/bin/nvprof --profile-child-processes -e all --csv --log-file "%p" ./profile_small

@@ -5,6 +5,7 @@ extern "C" {
 #endif
 
 #include <math.h>
+#include <float.h>
 #include <stdlib.h>
 
 #include <avilib.h>

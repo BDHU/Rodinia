@@ -39,10 +39,10 @@
 #include 	"meminfo.h"
 
 /* unsigned integer type */
-#ifndef U_INT_DEF
+//#ifndef U_INT_DEF
 typedef	unsigned int	u_int;
-#define U_INT_DEF
-#endif
+//#define U_INT_DEF
+//#endif
 
 /* vector definition */
 typedef	struct	{
