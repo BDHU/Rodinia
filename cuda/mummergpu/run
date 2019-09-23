@@ -4,4 +4,5 @@ set -ue
 #usage: mummergpu [options] reference.fna query.fna
 
 #./mummergpu ../../data/mummergpu/NC_003997.fna ../../data/mummergpu/NC_003997_q100bp.fna #> NC_00399.out
-./mummergpu ../../data/mummergpu/NC_003997.20k.fna ../../data/mummergpu/NC_003997_q100bp.fna #> NC_00399.out
+./mummergpu ../../data/mummergpu/NC_003997.fna ../../data/mummergpu/NC_003997_q100bp.fna #> NC_00399.out
+#./mummergpu ../../data/mummergpu/NC_003997.20k.fna ../../data/mummergpu/NC_003997_q100bp.fna #> NC_00399.out

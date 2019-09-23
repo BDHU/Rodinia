@@ -1,0 +1,342 @@
+==4631== NVPROF is profiling process 4631, command: ./dwt2d rgb.bmp -d 1024x1024 -f -5 -l 3
+==4631== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==4631== Profiling application: ./dwt2d rgb.bmp -d 1024x1024 -f -5 -l 3
+==4631== Profiling result:
+==4631== Event result:
+"Device","Kernel","Invocations","Event Name","Min","Max","Avg","Total"
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"tex0_cache_sector_queries",76776,76776,76776,230328
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"tex1_cache_sector_queries",64784,64784,64784,194352
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"tex0_cache_sector_misses",56770,56770,56770,170310
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"tex1_cache_sector_misses",47126,47126,47126,141378
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"fb_subp0_read_sectors",8344,8344,8344,25032
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"fb_subp1_read_sectors",8192,8192,8192,24576
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"fb_subp0_write_sectors",8396,8468,8422,25268
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"fb_subp1_write_sectors",8352,8384,8372,25116
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"fb1_subp0_read_sectors",8352,8352,8352,25056
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"fb1_subp1_read_sectors",8208,8208,8208,24624
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"fb1_subp0_write_sectors",8409,8585,8483,25451
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"fb1_subp1_write_sectors",8324,8480,8425,25276
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_write_sector_misses",16805,17053,16906,50719
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_write_sector_misses",16804,16996,16884,50652
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_read_sector_misses",16696,16696,16696,50088
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_read_sector_misses",16696,16696,16696,50088
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_read_tex_sector_queries",19180,19180,19180,57540
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_read_tex_sector_queries",19180,19180,19180,57540
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_write_tex_sector_queries",16384,16384,16384,49152
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_write_tex_sector_queries",16384,16384,16384,49152
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_read_tex_hit_sectors",2796,2796,2796,8388
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_read_tex_hit_sectors",2796,2796,2796,8388
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_write_tex_hit_sectors",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_write_tex_hit_sectors",0,4,1,4
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_total_read_sector_queries",19284,19284,19284,57852
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_total_read_sector_queries",19284,19284,19284,57852
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_total_write_sector_queries",16392,16396,16394,49184
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_total_write_sector_queries",16385,16389,16386,49159
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_read_sysmem_sector_queries",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_read_sysmem_sector_queries",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_write_sysmem_sector_queries",0,4,2,8
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_write_sysmem_sector_queries",1,5,2,7
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"gld_inst_8bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"gld_inst_16bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"gld_inst_32bit",292916,292916,292916,878748
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"gld_inst_64bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"gld_inst_128bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"gst_inst_8bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"gst_inst_16bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"gst_inst_32bit",262144,262144,262144,786432
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"gst_inst_64bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"gst_inst_128bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"prof_trigger_00",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"prof_trigger_01",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"prof_trigger_02",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"prof_trigger_03",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"prof_trigger_04",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"prof_trigger_05",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"prof_trigger_06",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"prof_trigger_07",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"warps_launched",208,208,208,624
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"inst_issued0",1256876,1351170,1297473,3892419
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"inst_issued1",165747,165750,165748,497245
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"inst_issued2",63364,63364,63364,190092
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"inst_executed",291312,291312,291312,873936
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"thread_inst_executed",8555104,8555110,8555106,25665320
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"not_predicated_off_thread_inst_executed",8237398,8237404,8237401,24712204
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"global_load",11180,11180,11180,33540
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"global_store",8320,8320,8320,24960
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"generic_load",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"generic_store",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"inst_executed_in_trap",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"active_cycles_in_trap",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"local_store",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"local_load",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"shared_load",37180,37180,37180,111540
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"shared_store",23920,23920,23920,71760
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"inst_executed_shared_atom_cas",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"shared_atom",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"global_atom_cas",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"atom_count",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"gred_count",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"divergent_branch",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"branch",6044,6044,6044,18132
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"shared_ld_bank_conflict",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"shared_st_bank_conflict",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"shared_ld_transactions",34712,34712,34712,104136
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"shared_st_transactions",23140,23140,23140,69420
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"active_cycles",743072,790220,763370,2290112
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"elapsed_cycles_sm",1143812,1249228,1205368,3616104
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"active_warps",4482240,4618168,4565427,13696283
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"active_cycles_pm",399859,405306,402837,1208513
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"active_warps_pm",2942544,2987956,2967046,8901140
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"elapsed_cycles_pm",818303,880279,842344,2527032
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"tex0_cache_sector_queries",388200,388200,388200,1164600
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"tex1_cache_sector_queries",220444,220444,220444,661332
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"tex0_cache_sector_misses",274958,274958,274958,824874
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"tex1_cache_sector_misses",150121,150135,150129,450387
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"fb_subp0_read_sectors",34560,34608,34585,103756
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"fb_subp1_read_sectors",34225,34357,34297,102891
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"fb_subp0_write_sectors",28734,33120,31654,94962
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"fb_subp1_write_sectors",28428,32567,31176,93530
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"fb1_subp0_read_sectors",34547,34619,34589,103769
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"fb1_subp1_read_sectors",34165,34316,34257,102773
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"fb1_subp0_write_sectors",29190,32942,31682,95046
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"fb1_subp1_write_sectors",28738,32630,31259,93778
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_write_sector_misses",57924,66062,63336,190008
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_write_sector_misses",58103,66133,63445,190337
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_read_sector_misses",69135,69227,69175,207525
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_read_sector_misses",69113,69213,69163,207491
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_read_tex_sector_queries",81458,81491,81476,244428
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_read_tex_sector_queries",81454,81491,81467,244401
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_write_tex_sector_queries",65536,65536,65536,196608
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_write_tex_sector_queries",65536,65536,65536,196608
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_read_tex_hit_sectors",12862,13103,12942,38828
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_read_tex_hit_sectors",12786,13055,12912,38736
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_write_tex_hit_sectors",0,9792,3264,9792
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_write_tex_hit_sectors",0,9760,3253,9760
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_total_read_sector_queries",81546,81610,81581,244745
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_total_read_sector_queries",81551,81586,81572,244716
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_total_write_sector_queries",65550,65554,65551,196654
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_total_write_sector_queries",65538,65542,65540,196622
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_read_sysmem_sector_queries",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_read_sysmem_sector_queries",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_write_sysmem_sector_queries",0,4,1,4
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_write_sysmem_sector_queries",1,5,3,11
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"gld_inst_8bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"gld_inst_16bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"gld_inst_32bit",1316250,1316250,1316250,3948750
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"gld_inst_64bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"gld_inst_128bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"gst_inst_8bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"gst_inst_16bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"gst_inst_32bit",1048576,1048576,1048576,3145728
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"gst_inst_64bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"gst_inst_128bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"prof_trigger_00",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"prof_trigger_01",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"prof_trigger_02",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"prof_trigger_03",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"prof_trigger_04",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"prof_trigger_05",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"prof_trigger_06",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"prof_trigger_07",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"warps_launched",540,540,540,1620
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"inst_issued0",2473143,2572754,2535974,7607924
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"inst_issued1",689067,689108,689087,2067263
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"inst_issued2",280290,280360,280324,840973
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"inst_executed",1246714,1246714,1246714,3740142
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"thread_inst_executed",37599024,37599028,37599026,112797078
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"not_predicated_off_thread_inst_executed",35098268,35098378,35098305,105294916
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"global_load",47250,47250,47250,141750
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"global_store",38880,38880,38880,116640
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"generic_load",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"generic_store",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"inst_executed_in_trap",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"active_cycles_in_trap",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"local_store",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"local_load",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"shared_load",172530,172530,172530,517590
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"shared_store",106920,106920,106920,320760
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"inst_executed_shared_atom_cas",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"shared_atom",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"global_atom_cas",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"atom_count",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"gred_count",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"divergent_branch",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"branch",22146,22146,22146,66438
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"shared_ld_bank_conflict",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"shared_st_bank_conflict",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"shared_ld_transactions",154268,154268,154268,462804
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"shared_st_transactions",102870,102870,102870,308610
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"active_cycles",1721371,1771142,1752782,5258348
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"elapsed_cycles_sm",2221950,2403146,2320639,6961918
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"active_warps",21095948,21594976,21263181,63789543
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"active_cycles_pm",939892,961180,953877,2861631
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"active_warps_pm",16974340,17541968,17336886,52010660
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"elapsed_cycles_pm",1382392,1473692,1422379,4267137
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"tex0_cache_sector_queries",24360,24360,24360,73080
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"tex1_cache_sector_queries",13408,13408,13408,40224
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"tex0_cache_sector_misses",17858,17858,17858,53574
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"tex1_cache_sector_misses",9394,9394,9394,28182
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"fb_subp0_read_sectors",2224,2224,2224,6672
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"fb_subp1_read_sectors",2048,2048,2048,6144
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"fb_subp0_write_sectors",2240,2404,2330,6992
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"fb_subp1_write_sectors",2176,2348,2254,6764
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"fb1_subp0_read_sectors",2208,2208,2208,6624
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"fb1_subp1_read_sectors",2048,2048,2048,6144
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"fb1_subp0_write_sectors",2205,2436,2318,6954
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"fb1_subp1_write_sectors",2180,2284,2218,6656
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_write_sector_misses",4445,4840,4648,13946
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_write_sector_misses",4476,4856,4656,13968
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_read_sector_misses",4432,4432,4432,13296
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_read_sector_misses",4408,4408,4408,13224
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_read_tex_sector_queries",5434,5434,5434,16302
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_read_tex_sector_queries",5434,5434,5434,16302
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_write_tex_sector_queries",4096,4096,4096,12288
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_write_tex_sector_queries",4096,4096,4096,12288
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_read_tex_hit_sectors",1338,1338,1338,4014
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_read_tex_hit_sectors",1338,1338,1338,4014
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_write_tex_hit_sectors",0,12,4,12
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_write_tex_hit_sectors",0,8,2,8
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_total_read_sector_queries",5514,5514,5514,16542
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_total_read_sector_queries",5514,5514,5514,16542
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_total_write_sector_queries",4104,4108,4106,12320
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_total_write_sector_queries",4097,4101,4098,12295
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_read_sysmem_sector_queries",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_read_sysmem_sector_queries",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"l2_subp0_write_sysmem_sector_queries",0,4,1,4
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"l2_subp1_write_sysmem_sector_queries",1,5,3,11
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"gld_inst_8bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"gld_inst_16bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"gld_inst_32bit",79596,79596,79596,238788
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"gld_inst_64bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"gld_inst_128bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"gst_inst_8bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"gst_inst_16bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"gst_inst_32bit",65536,65536,65536,196608
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"gst_inst_64bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"gst_inst_128bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"prof_trigger_00",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"prof_trigger_01",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"prof_trigger_02",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"prof_trigger_03",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"prof_trigger_04",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"prof_trigger_05",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"prof_trigger_06",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"prof_trigger_07",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"warps_launched",88,88,88,264
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"inst_issued0",637240,672950,658922,1976768
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"inst_issued1",58520,58524,58521,175564
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"inst_issued2",17548,17556,17550,52652
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"inst_executed",93152,93152,93152,279456
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"thread_inst_executed",2519592,2519594,2519592,7558778
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"not_predicated_off_thread_inst_executed",2431660,2431662,2431661,7294984
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"global_load",3564,3564,3564,10692
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"global_store",2112,2112,2112,6336
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"generic_load",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"generic_store",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"inst_executed_in_trap",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"active_cycles_in_trap",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"local_store",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"local_load",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"shared_load",9636,9636,9636,28908
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"shared_store",6864,6864,6864,20592
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"inst_executed_shared_atom_cas",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"shared_atom",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"global_atom_cas",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"atom_count",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"gred_count",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"divergent_branch",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"branch",2116,2116,2116,6348
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"shared_ld_bank_conflict",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"shared_st_bank_conflict",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"shared_ld_transactions",9176,9176,9176,27528
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"shared_st_transactions",6732,6732,6732,20196
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"active_cycles",356726,374575,367563,1102690
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"elapsed_cycles_sm",848062,907090,886603,2659810
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"active_warps",1455304,1466222,1460118,4380354
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"active_cycles_pm",230166,250315,237657,712973
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"active_warps_pm",717684,786124,742657,2227972
+"Tesla P100-SXM2-16GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"elapsed_cycles_pm",647052,655898,651593,1954779
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"tex0_cache_sector_queries",496320,496320,496320,496320
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"tex1_cache_sector_queries",486720,486720,486720,486720
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"tex0_cache_sector_misses",444528,444528,444528,444528
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"tex1_cache_sector_misses",440208,440208,440208,440208
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"fb_subp0_read_sectors",24594,24594,24594,24594
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"fb_subp1_read_sectors",24577,24577,24577,24577
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"fb_subp0_write_sectors",96964,96964,96964,96964
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"fb_subp1_write_sectors",96775,96775,96775,96775
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"fb1_subp0_read_sectors",24592,24592,24592,24592
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"fb1_subp1_read_sectors",24576,24576,24576,24576
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"fb1_subp0_write_sectors",97077,97077,97077,97077
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"fb1_subp1_write_sectors",96786,96786,96786,96786
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"l2_subp0_write_sector_misses",194043,194043,194043,194043
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"l2_subp1_write_sector_misses",194024,194024,194024,194024
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"l2_subp0_read_sector_misses",49186,49186,49186,49186
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"l2_subp1_read_sector_misses",49169,49169,49169,49169
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"l2_subp0_read_tex_sector_queries",49152,49152,49152,49152
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"l2_subp1_read_tex_sector_queries",49152,49152,49152,49152
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"l2_subp0_write_tex_sector_queries",196608,196608,196608,196608
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"l2_subp1_write_tex_sector_queries",196608,196608,196608,196608
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"l2_subp0_read_tex_hit_sectors",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"l2_subp1_read_tex_hit_sectors",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"l2_subp0_write_tex_hit_sectors",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"l2_subp1_write_tex_hit_sectors",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"l2_subp0_total_read_sector_queries",49200,49200,49200,49200
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"l2_subp1_total_read_sector_queries",49200,49200,49200,49200
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"l2_subp0_total_write_sector_queries",196622,196622,196622,196622
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"l2_subp1_total_write_sector_queries",196614,196614,196614,196614
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"l2_subp0_read_sysmem_sector_queries",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"l2_subp1_read_sysmem_sector_queries",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"l2_subp0_write_sysmem_sector_queries",4,4,4,4
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"l2_subp1_write_sysmem_sector_queries",1,1,1,1
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"gld_inst_8bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"gld_inst_16bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"gld_inst_32bit",786432,786432,786432,786432
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"gld_inst_64bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"gld_inst_128bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"gst_inst_8bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"gst_inst_16bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"gst_inst_32bit",3145728,3145728,3145728,3145728
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"gst_inst_64bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"gst_inst_128bit",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"prof_trigger_00",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"prof_trigger_01",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"prof_trigger_02",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"prof_trigger_03",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"prof_trigger_04",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"prof_trigger_05",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"prof_trigger_06",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"prof_trigger_07",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"warps_launched",32768,32768,32768,32768
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"inst_issued0",3012444,3012444,3012444,3012444
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"inst_issued1",1164110,1164110,1164110,1164110
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"inst_issued2",198935,198935,198935,198935
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"inst_executed",1556480,1556480,1556480,1556480
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"thread_inst_executed",49807360,49807360,49807360,49807360
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"not_predicated_off_thread_inst_executed",47972352,47972352,47972352,47972352
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"global_load",24576,24576,24576,24576
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"global_store",98304,98304,98304,98304
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"generic_load",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"generic_store",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"inst_executed_in_trap",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"active_cycles_in_trap",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"local_store",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"local_load",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"shared_load",98304,98304,98304,98304
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"shared_store",24576,24576,24576,24576
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"inst_executed_shared_atom_cas",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"shared_atom",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"global_atom_cas",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"atom_count",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"gred_count",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"divergent_branch",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"branch",122880,122880,122880,122880
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"shared_ld_bank_conflict",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"shared_st_bank_conflict",0,0,0,0
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"shared_ld_transactions",98304,98304,98304,98304
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"shared_st_transactions",24576,24576,24576,24576
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"active_cycles",2188101,2188101,2188101,2188101
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"elapsed_cycles_sm",2650086,2650086,2650086,2650086
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"active_warps",121062717,121062717,121062717,121062717
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"active_cycles_pm",1112447,1112447,1112447,1112447
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"active_warps_pm",123659424,123659424,123659424,123659424
+"Tesla P100-SXM2-16GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"elapsed_cycles_pm",1348860,1348860,1348860,1348860

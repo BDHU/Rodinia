@@ -8,6 +8,8 @@
 #define uint4 uint32_t
 #include "mummergpu.h"
 
+#include <iostream>
+
 char *OPT_reffilename = NULL;
 char *OPT_qryfilename = NULL;
 char *OPT_dotfilename = NULL;

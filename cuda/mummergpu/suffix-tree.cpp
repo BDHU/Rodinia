@@ -1190,6 +1190,8 @@ void buildNodeTexture(SuffixNode *node, PixelOfNode *nodeTexture,
     writeAddress(arr, myaddress);
     TextureAddress newaddr = arrayToAddress(arr);
 
+
+    // This is where the problem is node->m_parent is nul <----------------------------------------------
     TextureAddress parent(id2addr(node->m_parent->id()));
     writeAddress(nd->parent, parent);
     assert(arrayToAddress(nd->parent).data == parent.data);
