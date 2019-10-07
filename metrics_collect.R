@@ -48,15 +48,15 @@ summary(final.pr)
 
 
 #ggbiplot(final.pr, choices = c(1,2), labels = final[, 1], var.axes = F, labels.size = 3)
-par3d(windowRect = c(2154, 139, 3259, 958))
+par3d(windowRect = c(2309, 160, 2808, 594))
 plot3d(scores[, 1:3], col=c(1:1),size=6,type='p')
-view3d( theta = -50, phi = 20)
+view3d( theta = -55, phi = 23, zoom=0.78)
 par3d("windowRect")
 #text3d(scores[, 1:3], texts=data[,1], pos = 3)
 #score_to_disp <- subset(scores, select=-c(1))
 #label_to_disp <- data[-c(1),]
-text3d(scores[-c(1,4,5,10,22,23),1:3],texts=data[-c(1,4,5,10,22,23),1], pos=3)
-rgl.postscript("pca.pdf", "pdf")
+text3d(scores[-c(1,3,4,5,10,20,22,23),1:3],texts=data[-c(1,3,4,5,10,20,22,23),1], pos=3)
+rgl.postscript("pca_rodinia.eps", "eps")
 #text3d(scores[1:10,1:3],texts=data[1:10, 1], pos=3)
 #text3d(scores[,1]+2, scores[,2]+10, scores[,3]+2,texts=final[1, ])
 #print(data[,1])
@@ -70,7 +70,8 @@ fviz_eig(final.pr, addlabels = TRUE, ylim = c(0, 50))
 var <- get_pca_var(final.pr)
 #corrplot(var$contrib, is.corr = FALSE, )
 
-fviz_contrib(final.pr, choice = "var", axes = 4, top = ncol(final), xtickslab.rt = 65)
+fviz_contrib(final.pr, choice = "var", axes = 3, top = ncol(final), xtickslab.rt = 65)
 
 
 summary(new_d.pr)
+
