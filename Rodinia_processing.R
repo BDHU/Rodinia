@@ -81,3 +81,4 @@ fviz_contrib(final.pr, choice = "var", axes = 3, top = ncol(final), xtickslab.rt
 
 summary(new_d.pr)
 
+
