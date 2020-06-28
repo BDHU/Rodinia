@@ -252,6 +252,13 @@ int setup(int argc, char **argv) {
            npoints * nfeatures * sizeof(float)); /* now features holds
                                                     2-dimensional array of
                                                     features */
+    for (int i = 0; i<npoints;i++) {
+        for (int j = 0; j<nfeatures; j++) {
+            int index = i * nfeatures + j;
+            //printf("features %f ", buf[index]);
+        }
+    }
+
     free(buf);
 
     /* ======================= core of the clustering ===================*/

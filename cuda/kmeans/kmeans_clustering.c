@@ -129,8 +129,9 @@ float **kmeans_clustering(float **feature, /* in: [npoints][nfeatures] */
     for (i = 0; i < nclusters && initial_points >= 0; i++) {
         // n = (int)rand() % initial_points;
 
-        for (j = 0; j < nfeatures; j++)
+        for (j = 0; j < nfeatures; j++) {
             clusters[i][j] = feature[initial[n]][j]; // remapped
+        }
 
         /* swap the selected index to the end (not really necessary,
            could just move the end up) */

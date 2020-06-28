@@ -18,8 +18,7 @@ texture<float, 1, cudaReadModeElementType> t_features_flipped;
 texture<float, 1, cudaReadModeElementType> t_clusters;
 
 
-__constant__ float c_clusters[ASSUMED_NR_CLUSTERS *
-                              34]; /* constant memory for cluster centers */
+__constant__ float c_clusters[16384]; /* constant memory for cluster centers */
 
 /* ----------------- invert_mapping() --------------------- */
 /* inverts data array from row-major to column-major.
@@ -83,10 +82,11 @@ __global__ void kmeansPoint(float *features, /* in: [npoints*nfeatures] */
             for (j = 0; j < nfeatures; j++) {
                 int addr = point_id +
                            j * npoints; /* appropriate index of data point */
-                float diff = (tex1Dfetch(t_features, addr) -
-                              c_clusters[cluster_base_index +
-                                         j]); /* distance between a data point
-                                                 to cluster centers */
+                //float diff = (tex1Dfetch(t_features, addr) -
+                 //             c_clusters[cluster_base_index +
+                 //                        j]); /* distance between a data point
+                   //                              to cluster centers */
+                float diff = (features[addr] - c_clusters[cluster_base_index + j]);
                 ans += diff * diff;           /* sum of squares */
             }
             dist = ans;
